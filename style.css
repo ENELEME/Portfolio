@@ -11,7 +11,7 @@
     --title-color: #92898A;
     --dark-gris:#1e1d1d;
     --main-green:#99ec1b;  
-    --footer-color: #475716;     
+    --footer-color: #3a4711;     
   
     /* Fonts */
     --base-font: Montserrat, sans-serif;
@@ -361,11 +361,14 @@ h2 span{
     margin-top: 1.5vw;
     color: var(--main-white);   
 }
+
+/* FOOTER */
+
 footer{
     margin: 150px 0 120px;
     background: var( --footer-color);
-    height: 100vh;  
     text-align: center; 
+    height: 100%;
 }
 
 footer p{
@@ -374,6 +377,7 @@ footer p{
     color: var(--main-white);
     padding-top:50px;  
     letter-spacing: -5px;
+    word-spacing: 0.8rem;
 }
 
 #l2{
@@ -382,41 +386,24 @@ footer p{
 #l3{
     transition-delay:1.6s;
 }
+
 /* Buttons */
 
 .box-btn{
     display: flex;
-    justify-content:center;
+   justify-content: space-around;
+  
   }
 .btn {
     background-color: transparent;
-    width: calc(30rem + 10vw);
+    width: calc(25rem + 8vw);
     height: 10rem;
     border-radius: 9999px;
-    position:relative;
-    overflow: hidden;
-    margin-top:5rem;   
+    position:relative;   
+    margin-top:3rem;   
     line-height: 10rem; 
-    border: 1px solid  var(--main-white);  
-    margin-right: var(--space-20);
-}
-
-.btn::before {
-    content:"";
-    position:absolute;
-    background: var(--main-white);
-    width: 0;
-    height: 0;
-    left: 50%;
-    top:50%; 
-    transform:translate(-50%, -50%);
-    border-radius:50%;
-    transition: width .7s,height .7s;    
-}
-
-.btn:hover::before{
-    width: 700px;
-    height:700px;     
+    border: 0.1rem solid  var(--main-white);  
+    cursor:pointer;
 }
 
 .btn span{
@@ -425,19 +412,29 @@ footer p{
     pointer-events: none;
     font-size:calc(0.8rem + 0.5vw);  
     text-transform: uppercase;
-    color:var(--main-green);
-    font-weight: 700;
-} 
+    color:var(--main-white);
+}  
+.btn p{
+   display:none;
+}
+.btn-copy{
+    background:none;
+    border:none;
+    color:var(--main-white);
+    font-size:calc(0.8rem + 0.5vw); 
+    text-transform: uppercase;
+    cursor: pointer;  
+}
 
 .iDoMyBest{
-    font-size:calc(1rem + 1vw);
+    font-size:calc(0.5rem + 1vw);
     margin-top: 4rem;
     margin-bottom:4rem;
     color: var( --main-white); 
     font-weight: 500;
 }
 .mention-legale{   
-    padding: 7rem 0;   
+    padding: 5rem 0;   
     font-size:calc(0.8rem + 0.5vw);
     color:var(--main-white);
 }
@@ -509,11 +506,16 @@ footer p{
 }
 .project-infos{
     opacity: 1;
-    margin-left:15vw;
+    margin-left:10rem;
 }
 .mention-legale{
     padding: 5rem 0;    
 } 
+
+.img{
+    height: 250px;
+    max-width: 250px;   
+}
 
 }
 

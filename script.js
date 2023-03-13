@@ -32,6 +32,28 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }))
 
+// Copy du mail //
+
+const btnCopy = document.querySelector('.btn-copy');
+const txtCopy = document.querySelector('.btn p');
+const copyMail = document.getElementById("copy-mail");
+
+
+btnCopy.addEventListener('click', fonction1);
+btnCopy.addEventListener('mouseout', fonction2);
+
+function fonction1 (){
+    navigator.clipboard.writeText(txtCopy.textContent),
+    copyMail.innerHTML = "Copied to clipboard !";
+    copyMail.style.color = "#99ec1b";  
+};
+
+function fonction2 (){
+    copyMail.innerHTML = "manukyanmeline4@gmail.com"
+    copyMail.style.color = "white";    
+}
+
+
 
 
 

@@ -1,4 +1,6 @@
 
+// Locomotive scroll 
+
 const scroll = new LocomotiveScroll({
     el:document.querySelector("[data-scroll-container]"),
     smooth:true,
@@ -14,8 +16,9 @@ scroll.on("scroll",()=>{
     else{
         document.body.style.background="#FAFFFD";
         document.body.style.color = "#000101"
-    }
-})
+    }    
+});
+
 
 //  Navigation //
 
@@ -30,7 +33,7 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}))
+}));
 
 // Copy du mail //
 
@@ -45,13 +48,15 @@ btnCopy.addEventListener('mouseout', fonction2);
 function fonction1 (){
     navigator.clipboard.writeText(txtCopy.textContent),
     copyMail.innerHTML = "Copied to clipboard !";
-    copyMail.style.color = "#99ec1b";  
+    copyMail.style.color = "black";  
 };
 
 function fonction2 (){
     copyMail.innerHTML = "manukyanmeline4@gmail.com"
     copyMail.style.color = "white";    
 }
+
+
 
 
 

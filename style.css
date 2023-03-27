@@ -266,7 +266,7 @@ h2 span{
     margin:-220px 0 200px;
 }
 .about p{
-    width: 70%;
+    width: 80%;
     min-width: 280px    ;
     text-align: center;
     margin: 0 auto;
@@ -274,6 +274,11 @@ h2 span{
     font-size: calc(1rem + 1vw);
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+.about .word{
+    color: var(--footer-color);
+    font-family: var(--title-font);  
+    font-weight: bold;
 }
   
 .myphoto{
@@ -367,6 +372,7 @@ h2 span{
     font-size: var(--space-20);
     margin-top: 1.5vw;
     color: var(--main-white);   
+    font-size:calc(0.1rem + 2vw);
 }
 
 /* FOOTER */
